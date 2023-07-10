@@ -6,13 +6,34 @@
     <title>my Info</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <style>
+     
+.q{
+  padding-top:30px;
+  padding-bottom:20px;
+}
       .mt-6{display:inline;
       }
-      #a:hover
-      { border:2px solid whitesmoke; 
+      #c{
+        background-color: black;
       }
-      #b:hover,#c:hover{
-        border:2px solid black;      }
+      #b,#e{
+        color:black;
+      }
+      #a:hover
+      { border:3px solid rgb(212, 208, 208); 
+        
+      }
+      #b:hover
+      {
+        
+        border:2px solid black;  
+      background-color: black;
+      color:white;
+        }#e:hover{
+        border:2px solid black;  
+      background-color: black;
+      color:white;
+        }
       .footer-dark{
         padding-top: 20px;
       }
@@ -81,6 +102,34 @@
   font-size:13px;
   margin-bottom:0;
 }
+.skill-bar {
+      width: 60%;
+      height: 30px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .skill-bar .skill {
+      height: 100%;
+      border-radius: 5px;
+    }
+
+    .skill-bar .java { background-color: #3b583c; }
+    .skill-bar .c { background-color: #9d620b; }
+    .skill-bar .cplusplus { background-color: #18507e; }
+    .skill-bar .creativity { background-color: #471251; }
+    .skill-bar .leadership { background-color: #5a2335; }
+
+    .skill-bar .skill span {
+      display: block;
+      height: 100%;
+      line-height: 30px;
+      border-radius: 5px;
+      color: #fff;
+      text-align: center;
+      font-weight: bold;
+    }
 
     </style>
   </head>
@@ -91,8 +140,8 @@
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#section-id">
-            <img src="logo.png" style="border-radius:10px;" alt="Logo" width="150" height="70" class="d-inline-block align-text-top">
-            
+           <img src="logo.png" style="border-radius:10px;" alt="Logo" width="150" height="70" class="d-inline-block align-text-top">
+          
           </a>
        
         <ul class="nav nav-pills">
@@ -100,18 +149,18 @@
               <a class="nav-link bg-dark active" aria-current="page" id="c" href="#section-id" >About me</a>
             </li>&nbsp;&nbsp;
             <li class="nav-item dropdown">
-              <a class="nav-link  dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="color:black;" id="b">My details</a>
+              <a class="nav-link  dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"  id="b">My details</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="Black & White Minimalistic Professional Resume.jpg" style="color:black;">Resume</a></li>
                 <li><a class="dropdown-item" href="#" style="color:black;">Projects</a></li>
-                <li><a class="dropdown-item" href="#" style="color:black;">Something else here</a></li>
+                <li><a class="dropdown-item" href="#" style="color:black;">Blog</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#" style="color:black;">Separated link</a></li>
+                <li><a class="dropdown-item" href="https://www.linkedin.com/in/prerna-singh-592b86271/"  style="color:black;">Contact</a></li>
               </ul>
             </li>
             &nbsp;&nbsp;
             <li class="nav-item">
-              <a class="nav-link" id="a" href="#contacts" style="color:black;">Contact</a>
+              <a class="nav-link" id="e" href="#contacts" >Contact</a>
             </li>
            
           </ul>
@@ -153,9 +202,43 @@
 <section id="section-id">
 
         <h2>About me</h2>
-        <p>Hello!<br>My name is Prerna singh. I am a college student, lifelong learner and emerging life adventurer.</p>
+        <hr >
+        <p>Hello &#x1F44B;!<br>My name is Prerna singh. I am a college student, lifelong learner and emerging life adventurer.</p>
           <p>I am currently BIM 5th semester student of Bachelor Of Information mangaement(BIM) from Birgunj Public College,Birgunj(Nepal).In my free time, I enjoy doing coding,watching intersting movies ,painting.As I completed my +2 with commerce background and After I started my graduation I developed my intrest towards web development,so I decided to follow my interest and I started from scratch learning basic things about web development and still I am in the process to learn explore as much as I can.<p></p>
         </p>
+        <hr>
+        <h2 class="q">Skills Progress Bar</h2>
+
+  <div class="skill-bar">
+    <div class="skill java" style="width: 60%;">
+      <span>Java</span>
+    </div>
+  </div>
+
+  <div class="skill-bar">
+    <div class="skill c" style="width: 50%;">
+      <span>C</span>
+    </div>
+  </div>
+
+  <div class="skill-bar">
+    <div class="skill cplusplus" style="width: 28%;">
+      <span>C++</span>
+    </div>
+  </div>
+
+  <div class="skill-bar">
+    <div class="skill creativity" style="width: 80%;">
+      <span>Creativity</span>
+    </div>
+  </div>
+
+  <div class="skill-bar">
+    <div class="skill leadership" style="width: 70%;">
+      <span>Leadership</span>
+    </div>
+  </div>
+  <hr>
       </section>
       
       
@@ -172,7 +255,7 @@
                     </div>
                     <hr>
                     <section id="contacts">
-                      <div class="logos hidden md:flex md:mr-36 md:mt-36 md:fixed" ><ul>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<li class="mt-6"><a href="https://github.com/Prerna-kumari-singh/Prerna-kumari-singh.github.io.git"><img src="GitHub-Mark.png" height="40" class="bg-[#64ffda] rounded-lg transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-[#eff1fa] duration-300 ..." alt=""></a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<li class="mt-6"><a href="#"></a><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="h-8 w-8 bg-[#64ffda] rounded-lg  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-[#eff1fa] duration-300 ..." height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M511 4c138 0 155 1 209 3 53 2 90 11 123 24 34 13 62 30 90 58s45 56 58 90c13 33 22 70 24 123 2 54 3 71 3 209s-1 155-3 209c-2 53-11 90-24 123-13 34-30 62-58 90s-56 45-90 58c-33 13-70 22-123 24-54 2-71 3-209 3s-155-1-209-3c-53-2-90-11-123-24-34-13-62-30-90-58s-45-56-58-90C18 810 9 773 7 720c-2-54-3-71-3-209s1-155 3-209c2-53 11-90 24-123 13-34 30-62 58-90s56-45 90-58c33-13 70-22 123-24 54-2 71-3 209-3zm0 66c-144 0-161 1-217 3-52 2-81 12-100 19-49 20-82 53-102 102-7 19-17 48-19 100-2 56-3 73-3 217s1 161 3 217c2 52 12 81 19 100 20 49 53 82 102 102 19 7 48 17 100 19 56 2 73 3 217 3s161-1 217-3c52-2 81-12 100-19 49-20 82-53 102-102 7-19 17-48 19-100 2-56 3-73 3-217s-1-161-3-217c-2-52-12-81-19-100-20-49-53-82-102-102-19-7-48-17-100-19-56-2-73-3-217-3zm0 644c112 0 203-91 203-203s-91-203-203-203-203 91-203 203 91 203 203 203zm0-463c144 0 260 116 260 260S655 771 511 771 251 655 251 511s116-260 260-260zm332-10c0 34-28 60-62 60s-60-26-60-60 26-62 60-62 62 28 62 62z"></path></svg></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<li class="mt-6"><a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1026 1024" class="h-10 w-10 bg-[#64ffda] rounded-lg transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-[#eff1fa] duration-300 ..." height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M997.795 1002.43H789.769c-14.715 0-26.607-11.892-26.607-26.607V640.806c0-114.898-59.263-114.898-78.816-114.898-52.611 0-74.986 41.525-82.243 59.466-3.427 8.064-5.04 21.77-5.04 40.921v349.732c0 14.715-11.892 26.607-26.606 26.607H362.23c-7.055 0-13.909-2.822-18.948-7.86s-7.861-11.895-7.66-18.95c0-5.643 2.822-567.432 0-624.881-.403-7.257 2.217-14.312 7.257-19.553s11.893-8.265 19.35-8.265h208.228c14.714 0 26.607 11.892 26.607 26.607v15.723c35.074-31.244 85.669-57.046 161.058-57.046 166.702 0 266.28 115.3 266.28 308.409v359.005c0 14.715-11.893 26.607-26.607 26.607zm-181.418-53.214l155.012-.004V616.815c0-162.268-77.606-255.193-213.065-255.193-90.507 0-134.45 45.153-162.066 86.476-3.225 10.885-13.506 18.949-25.6 18.949h-1.41c-9.677 0-18.546-5.242-23.181-13.707-3.628-6.653-4.435-14.313-2.016-21.368v-55.835H389.443c1.411 111.068 0 470.477-.403 572.877h154.809V626.09c0-26.809 2.822-46.16 8.869-60.875 23.383-57.852 72.566-92.724 131.427-92.724 83.855 0 132.03 61.28 132.03 168.113v308.611h.204zm-569.246 53.21H38.904c-14.715 0-26.607-11.892-26.607-26.607V349.73c0-14.715 11.892-26.608 26.607-26.608h208.227c14.715 0 26.607 11.893 26.607 26.607V975.82c0 14.715-11.892 26.608-26.607 26.608zM65.513 949.213h155.01V376.336H65.514v572.876zm77.605-658.344l-1.412-.001c-82.041 0-141.707-56.844-141.707-135.055 0-78.009 60.674-134.854 144.529-134.854 82.444 0 141.305 55.231 142.918 134.249 0 78.816-60.674 135.66-144.328 135.66zm1.41-216.492c-54.627 0-91.313 32.857-91.313 81.639 0 47.974 36.284 81.637 88.492 81.637h1.41c54.426 0 91.112-32.857 91.112-81.638-1.008-49.386-36.283-81.638-89.701-81.638z"></path></svg></a></li></ul></div>
+                      <div class="logos hidden md:flex md:mr-36 md:mt-36 md:fixed" ><ul>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<li class="mt-6"><a href="https://github.com/Prerna-kumari-singh/Prerna-kumari-singh.github.io.git"><img src="GitHub-Mark.png" height="40" class="bg-[#64ffda] rounded-lg transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-[#eff1fa] duration-300 ..." alt=""></a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<li class="mt-6"><a href="#"></a><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="h-8 w-8 bg-[#64ffda] rounded-lg  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-[#eff1fa] duration-300 ..." height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M511 4c138 0 155 1 209 3 53 2 90 11 123 24 34 13 62 30 90 58s45 56 58 90c13 33 22 70 24 123 2 54 3 71 3 209s-1 155-3 209c-2 53-11 90-24 123-13 34-30 62-58 90s-56 45-90 58c-33 13-70 22-123 24-54 2-71 3-209 3s-155-1-209-3c-53-2-90-11-123-24-34-13-62-30-90-58s-45-56-58-90C18 810 9 773 7 720c-2-54-3-71-3-209s1-155 3-209c2-53 11-90 24-123 13-34 30-62 58-90s56-45 90-58c33-13 70-22 123-24 54-2 71-3 209-3zm0 66c-144 0-161 1-217 3-52 2-81 12-100 19-49 20-82 53-102 102-7 19-17 48-19 100-2 56-3 73-3 217s1 161 3 217c2 52 12 81 19 100 20 49 53 82 102 102 19 7 48 17 100 19 56 2 73 3 217 3s161-1 217-3c52-2 81-12 100-19 49-20 82-53 102-102 7-19 17-48 19-100 2-56 3-73 3-217s-1-161-3-217c-2-52-12-81-19-100-20-49-53-82-102-102-19-7-48-17-100-19-56-2-73-3-217-3zm0 644c112 0 203-91 203-203s-91-203-203-203-203 91-203 203 91 203 203 203zm0-463c144 0 260 116 260 260S655 771 511 771 251 655 251 511s116-260 260-260zm332-10c0 34-28 60-62 60s-60-26-60-60 26-62 60-62 62 28 62 62z"></path></svg></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<li class="mt-6"><a href="https://www.linkedin.com/in/prerna-singh-592b86271/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1026 1024" class="h-10 w-10 bg-[#64ffda] rounded-lg transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-[#eff1fa] duration-300 ..." height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M997.795 1002.43H789.769c-14.715 0-26.607-11.892-26.607-26.607V640.806c0-114.898-59.263-114.898-78.816-114.898-52.611 0-74.986 41.525-82.243 59.466-3.427 8.064-5.04 21.77-5.04 40.921v349.732c0 14.715-11.892 26.607-26.606 26.607H362.23c-7.055 0-13.909-2.822-18.948-7.86s-7.861-11.895-7.66-18.95c0-5.643 2.822-567.432 0-624.881-.403-7.257 2.217-14.312 7.257-19.553s11.893-8.265 19.35-8.265h208.228c14.714 0 26.607 11.892 26.607 26.607v15.723c35.074-31.244 85.669-57.046 161.058-57.046 166.702 0 266.28 115.3 266.28 308.409v359.005c0 14.715-11.893 26.607-26.607 26.607zm-181.418-53.214l155.012-.004V616.815c0-162.268-77.606-255.193-213.065-255.193-90.507 0-134.45 45.153-162.066 86.476-3.225 10.885-13.506 18.949-25.6 18.949h-1.41c-9.677 0-18.546-5.242-23.181-13.707-3.628-6.653-4.435-14.313-2.016-21.368v-55.835H389.443c1.411 111.068 0 470.477-.403 572.877h154.809V626.09c0-26.809 2.822-46.16 8.869-60.875 23.383-57.852 72.566-92.724 131.427-92.724 83.855 0 132.03 61.28 132.03 168.113v308.611h.204zm-569.246 53.21H38.904c-14.715 0-26.607-11.892-26.607-26.607V349.73c0-14.715 11.892-26.608 26.607-26.608h208.227c14.715 0 26.607 11.893 26.607 26.607V975.82c0 14.715-11.892 26.608-26.607 26.608zM65.513 949.213h155.01V376.336H65.514v572.876zm77.605-658.344l-1.412-.001c-82.041 0-141.707-56.844-141.707-135.055 0-78.009 60.674-134.854 144.529-134.854 82.444 0 141.305 55.231 142.918 134.249 0 78.816-60.674 135.66-144.328 135.66zm1.41-216.492c-54.627 0-91.313 32.857-91.313 81.639 0 47.974 36.284 81.637 88.492 81.637h1.41c54.426 0 91.112-32.857 91.112-81.638-1.008-49.386-36.283-81.638-89.701-81.638z"></path></svg></a></li></ul></div>
                       <hr>
                     <p class="copyright">Prerna_Singh © 2023</p><hr>
                   </div>
