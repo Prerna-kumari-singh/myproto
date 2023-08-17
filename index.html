@@ -130,6 +130,49 @@
       text-align: center;
       font-weight: bold;
     }
+      .hover-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-animation::before {
+  content: '👋 Hello!';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.hover-animation:hover::before {
+  opacity: 1;
+}
+
+.hover-animation:hover .emoji {
+  display: inline-block;
+  animation: shake 0.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
 
     </style>
   </head>
